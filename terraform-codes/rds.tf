@@ -13,8 +13,8 @@ resource "aws_db_instance" "default" {
   instance_class = "db.r6g.16xlarge"
   multi_az = true
   db_name = "db_1"
-  username = "username"
-  password = "password"
+  username = "root"
+  password = "9760573466"
   skip_final_snapshot = true
   vpc_security_group_ids = [aws_security_group.database-sg.id]
   tags = {
