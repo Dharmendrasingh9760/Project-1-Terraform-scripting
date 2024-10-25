@@ -1,6 +1,6 @@
 # Creating 1st EC2 instance in Public Subnet
 resource "aws_instance" "terraform-2" {
-  ami                         = "ami-04b1c88a6bbd48f8e"
+  ami                         = "ami-0dee22c13ea7a9a67"
   instance_type               = "t2.micro"
   key_name                    = "spidey-1"
   vpc_security_group_ids      = [aws_security_group.demosg.id]
@@ -14,7 +14,7 @@ tags = {
 
 # Creating 2nd EC2 isntance in Public Subnet
 resource "aws_instance" "terraform-3" {
-  ami                         = "ami-04b1c88a6bbd48f8e"
+  ami                         = "ami-0dee22c13ea7a9a67"
   instance_type               = "t2.micro"
   key_name                    = "spidey-1"
   vpc_security_group_ids      = [aws_security_group.demosg.id]
